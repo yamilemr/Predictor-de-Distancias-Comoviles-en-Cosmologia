@@ -1,7 +1,7 @@
 # **Predicción de Distancia Comóvil en Cosmología**
 
-Alumna: Yamile Montecinos Rodríguez  
-Asesor: Dr. Sebastien Mickael Marc Fromenteau  
+**Alumna:** Yamile Montecinos Rodríguez  
+**Asesor:** Dr. Sebastien Mickael Marc Fromenteau  
 
 El objetivo de este proyecto es desarrollar un modelo de aprendizaje automático capaz de predecir la distancia comóvil en cosmología a partir de parámetros fundamentales del universo:
 
@@ -37,8 +37,12 @@ Se busca comparar la predicción de la red neuronal con la distancia comóvil ca
 El modelo predice la distancia comóvil con alta precisión, siendo una alternativa eficiente a los cálculos integrales numéricos.
 
 ## Uso del Programa
-- Sólo se necesita ejecutar `predecir_distancia_comovil.ipynb`, ya que el notebook carga automáticamente el modelo ya entrenado junto con el scaler empleado para normalizar los datos.
-- Se deben ingresar los valores de $z$, $H_0$, $\Omega_m$ y $\Omega_\lambda$ para obtener la predicción y compararla con el cálculo numérico.
+- Si se desea realizar el proceso de entrenamiento:
+    * Primero se debe ejecutar `crear_bd.ipynb` para generar la base de datos empleada para el entrenamiento del modelo.
+    * Después se ejecuta `regresion.ipynb` para entrenar la red neuronal y probar su desempeño con nuevos datos aleatorios.
+- Si sólo se quiere utilizar el predictor:
+    * Únicamente se debe ejecutar `predecir_distancia_comovil.ipynb`, ya que el notebook carga automáticamente el modelo ya entrenado junto con el scaler empleado para normalizar los datos.
+    * Se requiere ingresar los valores de $z$, $H_0$, $\Omega_m$ y $\Omega_\lambda$ deseados para obtener la predicción y compararla con el cálculo numérico.
 
 ## Contacto
 LinkedIn: [@yamilemontecinos](https://www.linkedin.com/in/yamilemontecinos/)  
