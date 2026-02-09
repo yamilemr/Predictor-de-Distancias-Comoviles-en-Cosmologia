@@ -13,10 +13,11 @@ El objetivo de este proyecto es desarrollar un modelo de aprendizaje automático
 Se busca comparar la predicción de la red neuronal con la distancia comóvil calculada mediante integración numérica, ofreciendo una alternativa rápida y precisa.
 
 ## Archivos Disponibles
-- `tools.py`: Contiene funciones fundamentales para calcular la distancia comóvil de manera numérica.
-- `crear_bd.ipynb`: Genera un dataset sintético de 50,000 muestras de parámetros cosmológicos y sus correspondientes distancias comóviles, guardándolo en un archivo CSV.
-- `regresion.ipynb`: Entrena una red neuronal para predecir la distancia comóvil a partir de los parámetros cosmológicos. Incluye métricas de evaluación en el conjunto de entrenamiento y prueba. También se hace una prueba del modelo utilizando nuevos datos aleatorios.
-- `predecir_distancia_comovil.ipynb`: Presenta una función que permite predecir la distancia comóvil dado los parámetros $z$, $H_0$, $\Omega_m$ y $\Omega_\Lambda$, comparando la predicción de la red neuronal con el valor calculado numéricamente.
+- `notebooks/`:
+    * `tools.py`: Contiene funciones fundamentales para calcular la distancia comóvil de manera numérica.
+    * `crear_bd.ipynb`: Genera un dataset sintético de 50,000 muestras de parámetros cosmológicos y sus correspondientes distancias comóviles, guardándolo en un archivo CSV.
+    * `regresion.ipynb`: Entrena una red neuronal para predecir la distancia comóvil a partir de los parámetros cosmológicos. Incluye métricas de evaluación en el conjunto de entrenamiento y prueba. También se hace una prueba del modelo utilizando nuevos datos aleatorios.
+    * `predecir_distancia_comovil.ipynb`: Presenta una función que permite predecir la distancia comóvil dado los parámetros $z$, $H_0$, $\Omega_m$ y $\Omega_\Lambda$, comparando la predicción de la red neuronal con el valor calculado numéricamente.
 - `resources/`:
     * `bd_distancia_comovil.csv`: Base de datos del proyecto.
     * `modelo_distancia_comovil.h5`: Red neuronal entrenada.
